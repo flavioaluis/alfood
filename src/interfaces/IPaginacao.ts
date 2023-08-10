@@ -4,3 +4,8 @@ export interface IPaginacao<T> {
     previous: string
     results: T[]
 }
+
+export interface IParametrosBusca {
+    ordering?: string
+    search?: string
+  }
