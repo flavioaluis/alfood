@@ -45,7 +45,7 @@ const excluir = (deletePrato: IPrato) => {
               {prato.tag}
             </TableCell>
             <TableCell>
-              <a href={prato.imagem} target="_blank" rel="noreferer">ver imagem</a>
+              <a href={prato.imagem} target="_blank" rel="noreferrer">ver imagem</a>
             </TableCell>
             <TableCell>
               [<Link to={`/admin/pratos/${prato.id}`}>editar</Link>]
