@@ -1,9 +1,8 @@
 import {Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@mui/material';
-import { Link } from 'react-router-dom';
 import http from "../../../http";
 import { useEffect, useState } from 'react';
 import IPrato from '../../../interfaces/IPrato';
-
+import { Link as RouterLink } from 'react-router-dom'
 
 const AdminPrato = () => {
 
@@ -48,7 +47,7 @@ const excluir = (deletePrato: IPrato) => {
               <a href={prato.imagem} target="_blank" rel="noreferrer">ver imagem</a>
             </TableCell>
             <TableCell>
-              [<Link to={`/admin/pratos/${prato.id}`}>editar</Link>]
+            [ <RouterLink to={`/admin/pratos/${prato.id}`}>editar</RouterLink> ]
             </TableCell>
             <TableCell>
               <Button variant="outlined" color="error" onClick={() => excluir(prato)}>Excluir</Button>
